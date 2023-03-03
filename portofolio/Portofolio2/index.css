@@ -21,6 +21,7 @@
     /* background: crimson; */
     font-family: 'Ubuntu', sans-serif;
 }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -41,8 +42,11 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
 }
-
+.navbar .menu li a:hover{
+    color: crimson;
+}
 /* home section styling  */
 
 .home{
