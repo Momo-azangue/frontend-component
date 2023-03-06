@@ -1,4 +1,4 @@
-const { click } = require("@testing-library/user-event/dist/click");
+
 
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -12,5 +12,6 @@ $(document).ready(function(){
     $('.menu-btn').click(function(){ 
 
         $('.navbar .menu').toggleClass("active");
-    });
+        $('.menu-btn i').toggleClass("active");
+    }); 
 });
