@@ -120,16 +120,13 @@
     color: crimson;
     background: none;
 }
-
-/* about section styling */
+/* 
+all similar content styling */
 section {
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins', sans-serif;
 
-}
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -138,7 +135,7 @@ section {
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: ""; 
     position: absolute;
     bottom: 0px;
@@ -148,8 +145,7 @@ section {
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "who i am"; 
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -160,9 +156,19 @@ section {
     transform: translateX(-50%);
 }
 
-.about .about-content {
+/* about section styling */
+
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+
+}
+.about .title::after{
+    content: "who i am";
+}
+.about .about-content, 
+.services .serv-content {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -199,6 +205,7 @@ section {
     background: crimson;
     color: #fff;
     font-size: 20px;
+    font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
@@ -206,11 +213,22 @@ section {
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    
+    color: crimson;
+    background: none;
 }
 
-
-
+/**********************services section styling ***********************************/
+.services{
+    color: #fff;
+    background: #111;
+}
+.services .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #111;
+    content: "what i provide";
+}
 
 
 
@@ -223,11 +241,21 @@ section {
 
 
 /******************** responsive media query start  ***************************/
-@media(max-width: 1104px){
+@media(max-width: 1300px){
     .home .max-width{
         margin-left: 0px;
     }
 }
+@media(max-width: 1104px){
+
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+
+
 @media(max-width: 991px){
     .max-width{
         padding: 0 50px;
@@ -279,6 +307,21 @@ section {
     .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
     }
 }
 
