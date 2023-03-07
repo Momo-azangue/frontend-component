@@ -122,6 +122,21 @@
 }
 /* 
 all similar content styling */
+
+.about, .services, .skills{
+    font-family: 'Poppins', sans-serif;
+
+}
+.about .about-content, 
+.services .serv-content,
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 section {
     padding: 100px 0;
 }
@@ -158,20 +173,11 @@ section .title::after{
 
 /* about section styling */
 
-.about, .services{
-    font-family: 'Poppins', sans-serif;
 
-}
 .about .title::after{
     content: "who i am";
 }
-.about .about-content, 
-.services .serv-content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
+
 .about .about-content .left{
     width: 45%;
 }
