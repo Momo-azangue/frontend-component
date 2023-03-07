@@ -276,8 +276,14 @@ transition: all 0.3s ease;
 
 /* skills section styling */
 
+.skills .title::after{
+    content: "what i know";
+}
 
+.skills .skills-content .column{
+    width: calc(50% - 30px);
 
+}
 
 
 
