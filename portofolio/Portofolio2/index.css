@@ -123,7 +123,7 @@
 /* 
 all similar content styling */
 
-.about, .services, .skills{
+.about, .services, .skills, .teams{
     font-family: 'Poppins', sans-serif;
 
 }
@@ -224,14 +224,16 @@ section .title::after{
 }
 
 /**********************services section styling ***********************************/
-.services{
+.services, .teams{
     color: #fff;
     background: #111;
 }
-.services .title::before{
+.services .title::before,
+.teams .title::before{
     background: #fff;
 }
-.services .title::after{
+.services .title::after,
+.teams .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -362,6 +364,54 @@ transition: all 0.3s ease;
 .skills-content .right .mysql::before{
     width: 70%;
 }
+
+
+/* teams section styling */
+
+.teams .title::after{
+    content: "who whith me";
+
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
