@@ -378,6 +378,12 @@ transition: all 0.3s ease;
     padding: 25px 35px;
 
 }
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .teams .carousel .card img{
     height: 150px;
     width: 150px;
