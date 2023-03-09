@@ -437,6 +437,13 @@ transition: all 0.3s ease;
 }
 
 
+/* contact section styling */
+.contact .title::after{
+    content: "get in touch";
+    
+}
+
+
 
 
 
