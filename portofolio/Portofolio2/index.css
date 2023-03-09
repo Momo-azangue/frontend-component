@@ -386,7 +386,9 @@ transition: all 0.3s ease;
     justify-content: center;
 }
 .teams .carousel .card .text{
-    
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
     height: 150px;
