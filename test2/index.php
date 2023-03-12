@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
 
 </head>
 <body>
@@ -256,6 +257,11 @@
             </div>
             
         </div>
+
+
+
+
+        
         <div class="column right">
             <div class="text">Message me</div>
             <form action="send.php" method="POST" id="" autocomplete="off">
