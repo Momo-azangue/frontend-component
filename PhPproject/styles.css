@@ -76,6 +76,11 @@ form .message textarea:focus{
 form .field input:focus ~ i{
     color: #0D6EFD;
 }
+
+
+/* form .message i:focus{
+    color: #0D6EFD;
+} */
 form .message{
     position: relative;
 }
@@ -109,5 +114,36 @@ form .button-area{
 .button-area span{
     color: #0D6EFD;
     margin-left: 30px;
-    
+
+}
+
+@media(max-width: 600px){
+    .wrapper header{
+        text-align: center;
+        }
+    form .dbl-field{
+
+        margin-bottom: 0px;
+        flex-direction: column;
+
+    }
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    form .message textarea{
+        resize: none;
+
+    }
+    form .button-area{
+        flex-direction: column;
+    }
+    .button-area button{
+        width: 100%;
+    }
+    .button-area span{
+
+        text-align: center;
+        margin: 20px 0;
+    }
 }
